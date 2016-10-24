@@ -1,0 +1,33 @@
+{
+	"name":        "germania-kg/downloads",
+
+	"type":        "library",
+	"license":     "proprietary",
+
+	"authors": [
+		{
+			"name":  "Carsten Witt",
+			"email": "carstenwitt@germania-kg.de",
+			"role":  "Developer"
+		}
+	],
+
+  "autoload": {
+      "psr-4": {
+          "Germania\\Downloads\\": "src/"
+      }
+  },
+
+
+	"require": {
+		"germania/worlds": "^2.0",
+		"germania/categories": "^1.0",
+		"container-interop/container-interop": "^1.1"
+	},
+
+	"require-dev": {
+			"satooshi/php-coveralls": "^1.0",
+			"phpunit/phpunit": "^5.2"
+	}
+
+}
