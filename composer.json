@@ -21,7 +21,7 @@
 
 	"require": {
 		"germania/worlds": "^2.0",
-		"germania/categories": "^1.0",
+		"germania-kg/categories": "^1.0",
 		"container-interop/container-interop": "^1.1"
 	},
 
