@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5205abeb074e7773a5ffe25e85db05cf",
+    "hash": "502f995f5a510e0ddd3573ff2b57bc92",
     "content-hash": "01db024d9cde3d3bd5bab7bc393e1a00",
     "packages": [
         {
@@ -36,16 +36,16 @@
         },
         {
             "name": "germania-kg/categories",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GermaniaKG/Categories.git",
-                "reference": "ef7d258edda5071788eb8053484136a761ed1695"
+                "reference": "b071c940eb80a0ad6cf441e655d5dc187b366056"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GermaniaKG/Categories/zipball/ef7d258edda5071788eb8053484136a761ed1695",
-                "reference": "ef7d258edda5071788eb8053484136a761ed1695",
+                "url": "https://api.github.com/repos/GermaniaKG/Categories/zipball/b071c940eb80a0ad6cf441e655d5dc187b366056",
+                "reference": "b071c940eb80a0ad6cf441e655d5dc187b366056",
                 "shasum": ""
             },
             "require": {
@@ -72,20 +72,20 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2016-10-24 13:33:42"
+            "time": "2016-10-25 11:07:04"
         },
         {
             "name": "germania-kg/worlds",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GermaniaKG/Worlds.git",
-                "reference": "7b5a55131e796b960d6ebc4fa292bd2fc72b08e0"
+                "reference": "d9c4dc311e71b11f8134209a6e5d593a3f36af82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GermaniaKG/Worlds/zipball/7b5a55131e796b960d6ebc4fa292bd2fc72b08e0",
-                "reference": "7b5a55131e796b960d6ebc4fa292bd2fc72b08e0",
+                "url": "https://api.github.com/repos/GermaniaKG/Worlds/zipball/d9c4dc311e71b11f8134209a6e5d593a3f36af82",
+                "reference": "d9c4dc311e71b11f8134209a6e5d593a3f36af82",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +112,7 @@
                     "role": "Developer"
                 }
             ],
-            "time": "2016-10-24 13:42:51"
+            "time": "2016-10-25 10:35:38"
         }
     ],
     "packages-dev": [
@@ -762,16 +762,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.6.1",
+            "version": "5.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "60c32c5b5e79c2248001efa2560f831da11cc2d7"
+                "reference": "cd13b23ac5a519a4708e00736c26ee0bb28b2e01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/60c32c5b5e79c2248001efa2560f831da11cc2d7",
-                "reference": "60c32c5b5e79c2248001efa2560f831da11cc2d7",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/cd13b23ac5a519a4708e00736c26ee0bb28b2e01",
+                "reference": "cd13b23ac5a519a4708e00736c26ee0bb28b2e01",
                 "shasum": ""
             },
             "require": {
@@ -840,7 +840,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-10-07 13:03:26"
+            "time": "2016-10-25 07:40:25"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
