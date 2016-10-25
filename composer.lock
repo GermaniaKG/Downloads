@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1585f11ea185cb7903747225ea436c0b",
-    "content-hash": "c4d94c14c2722ae614a0162c4f67e2bf",
+    "hash": "5205abeb074e7773a5ffe25e85db05cf",
+    "content-hash": "01db024d9cde3d3bd5bab7bc393e1a00",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -75,17 +75,17 @@
             "time": "2016-10-24 13:33:42"
         },
         {
-            "name": "germania/worlds",
-            "version": "2.0.5",
+            "name": "germania-kg/worlds",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/GermaniaKG/Worlds.git",
-                "reference": "2bf695c2820096a17d42cdb5a522916567cf7670"
+                "reference": "7b5a55131e796b960d6ebc4fa292bd2fc72b08e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/GermaniaKG/Worlds/zipball/2bf695c2820096a17d42cdb5a522916567cf7670",
-                "reference": "2bf695c2820096a17d42cdb5a522916567cf7670",
+                "url": "https://api.github.com/repos/GermaniaKG/Worlds/zipball/7b5a55131e796b960d6ebc4fa292bd2fc72b08e0",
+                "reference": "7b5a55131e796b960d6ebc4fa292bd2fc72b08e0",
                 "shasum": ""
             },
             "require": {
@@ -95,7 +95,7 @@
                 "phpunit/phpunit": "^5.2",
                 "satooshi/php-coveralls": "^1.0"
             },
-            "type": "project",
+            "type": "library",
             "autoload": {
                 "psr-4": {
                     "Germania\\Worlds\\": "src/"
@@ -112,8 +112,7 @@
                     "role": "Developer"
                 }
             ],
-            "description": "The product worlds of Germania KG, Altenholz",
-            "time": "2016-10-24 12:47:48"
+            "time": "2016-10-24 13:42:51"
         }
     ],
     "packages-dev": [

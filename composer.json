@@ -18,9 +18,12 @@
       }
   },
 
+  "autoload-dev": {
+      "psr-4": { "tests\\": "tests/src" }
+  },
 
 	"require": {
-		"germania/worlds": "^2.0",
+		"germania-kg/worlds": "^2.0",
 		"germania-kg/categories": "^1.0",
 		"container-interop/container-interop": "^1.1"
 	},
@@ -29,5 +32,4 @@
 			"satooshi/php-coveralls": "^1.0",
 			"phpunit/phpunit": "^5.2"
 	}
-
 }
