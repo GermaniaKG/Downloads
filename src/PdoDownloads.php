@@ -12,22 +12,39 @@ class PdoDownloads extends Downloads implements DownloadsInterface
     public $categories;
     public $worlds;
 
-    public function __construct( \PDO $pdo, DownloadInterface $download = null, WorldsInterface $worlds = null  )
+    public $downloads_table            = "downloads";
+    public $downloads_categories_table = "downloads_categories_mm";
+    public $downloads_worlds_table     = "downloads_worlds_mm";
+
+
+    /**
+     * @param \PDO                   $pdo                        PDO instance
+     * @param DownloadInterface|null $download                   Custom DownloadInterface instance (optional)
+     * @param WorldsInterface|null   $worlds                     Custom 'Worlds' collection (optional)
+     * @param string|null            $downloads_table            Download items table name (optional)
+     * @param string|null            $downloads_categories_table Downlaods and Categories relations table name (optional)
+     * @param string|null            $downloads_worlds_table     Downlaods and 'Worlds' relations table name (optional)
+     */
+    public function __construct( \PDO $pdo, DownloadInterface $download = null, WorldsInterface $worlds = null, $downloads_table = null, $downloads_categories_table = null, $downloads_worlds_table = null  )
     {
 
+        $this->downloads_table            = $downloads_table            ?: $this->downloads_table;
+        $this->downloads_categories_table = $downloads_categories_table ?: $this->downloads_categories_table;
+        $this->downloads_worlds_table     = $downloads_worlds_table     ?: $this->downloads_worlds_table;
+
         // ID is listed twice here in order to use it with FETCH_UNIQUE as array key
-        $sql = 'SELECT DISTINCT
+        $sql = "SELECT DISTINCT
         D.id,
         D.id               AS id,
         D.download_type    AS type,
         D.download_name    AS name,
         D.download_description AS description,
         D.download_url         AS url,
-        GROUP_CONCAT( DISTINCT DC.category_id SEPARATOR ",") AS category_ids,
-        GROUP_CONCAT( DISTINCT DW.world_id    SEPARATOR ",") AS world_ids
-        FROM downloads D
+        GROUP_CONCAT( DISTINCT DC.category_id SEPARATOR ',') AS category_ids,
+        GROUP_CONCAT( DISTINCT DW.world_id    SEPARATOR ',') AS world_ids
+        FROM {$this->downloads_table} D
 
-        LEFT JOIN downloads_categories_mm DC
+        LEFT JOIN {$this->downloads_categories_table} DC
         ON D.id = DC.download_id
 
         LEFT JOIN downloads_worlds_mm DW
@@ -36,7 +53,7 @@ class PdoDownloads extends Downloads implements DownloadsInterface
         WHERE D.is_active > 0
         GROUP BY D.id
         ORDER BY D.download_name ASC,
-                 D.download_date DESC';
+                 D.download_date DESC";
 
         $stmt = $pdo->prepare( $sql );
 
