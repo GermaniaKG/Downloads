@@ -3,8 +3,14 @@
 **This package was destilled from legacy code!**   
 You better do not want it to use this in production.
 
+[![Packagist](https://img.shields.io/packagist/v/germania-kg/downloads.svg?style=flat)](https://packagist.org/packages/germania-kg/downloads)
+[![PHP version](https://img.shields.io/packagist/php-v/germania-kg/downloads.svg)](https://packagist.org/packages/germania-kg/downloads)
+[![Build Status](https://img.shields.io/travis/GermaniaKG/Downloads.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/Downloads)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/build-status/master)
 
-## Installation
+## Installation with Composer
 
 ```bash
 $ composer require germania-kg/downloads
@@ -42,15 +48,21 @@ echo $my_download->getUrl();
 ?>
 ```
 
-
-## Development and Testing
-
-Develop using `develop` branch, using [Git Flow](https://github.com/nvie/gitflow).   
-**Currently, no tests are specified.**
+## Development
 
 ```bash
-$ git clone git@github.com:GermaniaKG/Downloads.git germania-downloads
-$ cd germania-downloads
-$ cp phpunit.xml.dist phpunit.xml
-$ phpunit
+$ git clone https://github.com/GermaniaKG/Downloads.git
+$ cd Downloads
+$ composer install
 ```
+
+## Unit tests
+
+Either copy `phpunit.xml.dist` to `phpunit.xml` and adapt to your needs, or leave as is. Run [PhpUnit](https://phpunit.de/) test or composer scripts like this:
+
+```bash
+$ composer test
+# or
+$ vendor/bin/phpunit
+```
+
