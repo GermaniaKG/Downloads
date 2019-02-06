@@ -1,10 +1,10 @@
-#Germania\Downloads
+# Germania KG · Downloads
 
 **This package was destilled from legacy code!**   
 You better do not want it to use this in production.
 
 
-##Installation
+## Installation
 
 ```bash
 $ composer require germania-kg/downloads
@@ -13,7 +13,7 @@ $ composer require germania-kg/downloads
 **MySQL:** This package requires some MySQL tables *downloads, downloads\_categories\_mm* and *downloads\_worlds\_mm* which you can install using `germania_downloads.sql` in `sql/` directory.
 
 
-##Usage
+## Usage
 
 While the *Downloads* class is a simple storage, *PdoDownloads* reads all downloads from the database. They both implement the [container-interop](https://github.com/container-interop/container-interop) (upcoming [PSR 11](https://github.com/php-fig/fig-standards/blob/master/proposed/container.md) standard), [IteratorAggregate](http://php.net/manual/de/class.iteratoraggregate.php) and SPL's [Countable](http://php.net/manual/de/class.countable.php). 
 
@@ -43,7 +43,7 @@ echo $my_download->getUrl();
 ```
 
 
-##Development and Testing
+## Development and Testing
 
 Develop using `develop` branch, using [Git Flow](https://github.com/nvie/gitflow).   
 **Currently, no tests are specified.**
