@@ -89,7 +89,7 @@ class PdoDownloads extends Downloads implements DownloadsInterface
             $world_ids = explode(",", $download->world_ids);
 
             while ($world_id = array_shift($world_ids))
-                if ($this->categories->has( $world_id ))
+                if ($this->worlds->has( $world_id ))
                     $download_worlds->push( $this->worlds->get( $world_id ));
         endforeach;
 
