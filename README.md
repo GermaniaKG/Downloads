@@ -5,10 +5,8 @@ You better do not want it to use this in production.
 
 [![Packagist](https://img.shields.io/packagist/v/germania-kg/downloads.svg?style=flat)](https://packagist.org/packages/germania-kg/downloads)
 [![PHP version](https://img.shields.io/packagist/php-v/germania-kg/downloads.svg)](https://packagist.org/packages/germania-kg/downloads)
-[![Build Status](https://img.shields.io/travis/GermaniaKG/Downloads.svg?label=Travis%20CI)](https://travis-ci.org/GermaniaKG/Downloads)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/badges/build.png?b=master)](https://scrutinizer-ci.com/g/GermaniaKG/Downloads/build-status/master)
+[![Tests](https://github.com/GermaniaKG/Downloads/actions/workflows/tests.yml/badge.svg)](https://github.com/GermaniaKG/Downloads/actions/workflows/tests.yml)
+
 
 ## Installation with Composer
 

@@ -25,11 +25,14 @@
 	"require": {
 		"germania-kg/worlds": "^2.0",
 		"germania-kg/categories": "^1.0",
-		"container-interop/container-interop": "^1.1"
+		"container-interop/container-interop": "^1.1",
+		"php": "^7.4|^8.0"
 	},
 
 	"require-dev": {
 			"satooshi/php-coveralls": "^1.0",
-			"phpunit/phpunit": "^5.2"
+			"phpunit/phpunit": "^9.0",
+		"phpspec/prophecy": "^1.16",
+		"phpstan/phpstan": "^1.9"
 	}
 }
