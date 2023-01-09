@@ -4,7 +4,6 @@
 You better do not want it to use this in production.
 
 [![Packagist](https://img.shields.io/packagist/v/germania-kg/downloads.svg?style=flat)](https://packagist.org/packages/germania-kg/downloads)
-[![PHP version](https://img.shields.io/packagist/php-v/germania-kg/downloads.svg)](https://packagist.org/packages/germania-kg/downloads)
 [![Tests](https://github.com/GermaniaKG/Downloads/actions/workflows/tests.yml/badge.svg)](https://github.com/GermaniaKG/Downloads/actions/workflows/tests.yml)
 
 
