@@ -5,5 +5,5 @@ use Interop\Container\ContainerInterface;
 
 interface DownloadsInterface extends \IteratorAggregate, \Countable, ContainerInterface
 {
-    public function push( DownloadsInterface $download );
+    public function push( DownloadInterface $download );
 }

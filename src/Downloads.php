@@ -7,7 +7,7 @@ class Downloads implements DownloadsInterface
     public $downloads  = array();
 
 
-    public function push( DownloadsInterface $download )
+    public function push( DownloadInterface $download )
     {
         $this->downloads[ $download->getId() ] = $download;
         return $this;
@@ -15,9 +15,9 @@ class Downloads implements DownloadsInterface
 
 
     /**
-     * @implements ContainerInterface
      * @return DownloadInterface
      */
+    #[\ReturnTypeWillChange]
     public function get( $id )
     {
         if ($this->has( $id )) {
@@ -28,9 +28,9 @@ class Downloads implements DownloadsInterface
 
 
     /**
-     * @implements ContainerInterface
      * @return boolean
      */
+    #[\ReturnTypeWillChange]
     public function has ($id )
     {
         return array_key_exists( $id, $this->downloads);
@@ -38,18 +38,14 @@ class Downloads implements DownloadsInterface
 
 
 
-    /**
-     * @implements IteratorAggregate
-     */
+    #[\ReturnTypeWillChange]
     public function getIterator()
     {
         return new \ArrayIterator( $this->downloads );
     }
 
 
-    /**
-     * @implements Countable
-     */
+    #[\ReturnTypeWillChange]
     public function count()
     {
         return count($this->downloads);
